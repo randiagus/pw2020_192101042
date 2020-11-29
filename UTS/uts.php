@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Nusantara Computer Center </title>
+	<title>Nusantara Computer Center</title>
 </head>
 <body>
-	<h2 style="text-align: center;"> Nusantara Computer Center </h2>
+	<h2 style="text-align: center;">Nusantara Computer Center</h2>
 	<form method = 'post'>
 		<table style="margin-left: auto;margin-right: auto;">
 			<tr>
@@ -18,9 +18,9 @@
 				<td>
 					<select name="kode_Pendaftaran" style="width: 175px;">
 						<option value="">--Kode Pendaftaran--</option>
-						<option value="VBSK">VBSK00108</option>
-						<option value="DPSJ">DPSJ00210</option>
-						<option value="LXSM">LXSM10105</option>
+						<option value="VBSK00108">VBSK00108</option>
+						<option value="DPSJ00210">DPSJ00210</option>
+						<option value="LXSM10105">LXSM10105</option>
 					</select>
 				</td>
 			</tr>
@@ -76,8 +76,8 @@
 		echo '<td>:</td>';
 		echo '<td>'.$_POST['nama'].'</td>';
 
-		$jenis_Kursus = substr($_POST['kode_Pendaftaran'], 0, 2);
-		if ($jenis_Kursus == 'LX') {
+		$jenis_kursus = substr($_POST['kode_Pendaftaran'], 0, 2);
+		if ($jenis_kursus == 'LX') {
 			$newJenisKursus = 'Sistem Operasi';
 		}else {
 			$newJenisKursus = 'Pemrograman';
